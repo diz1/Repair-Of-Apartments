@@ -28,28 +28,19 @@
         margin-right: 29px;
         margin-left: 2px;
     }
-    
-    // .contacts__button
 
-    &__button {
-        background-color: $main-color;
-    }
-}
-
-.text {
-
-    // .text__adress
+    // .contacts__address
 
     &__address {
         font-size: 13px;
         font-weight: 300;
 
         color: $text-color;
-        
+
         margin-bottom: 9px;
     }
     
-    // .text__phone
+    // .contacts__phone
 
     &__phone {
         color: $text-color;
@@ -58,5 +49,11 @@
         font-weight: 700;
 
         padding-bottom: 2px;
+    }
+
+    // .contacts__button
+
+    &__button {
+        background-color: $main-color;
     }
 }

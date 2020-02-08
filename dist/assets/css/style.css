@@ -462,22 +462,22 @@ body {
     margin-left: 2px;
 }
 
-.contacts__button {
-    background-color: #ffd200;
-}
-
-.text__address {
+.contacts__address {
     font-size: 13px;
     font-weight: 300;
     color: #333333;
     margin-bottom: 9px;
 }
 
-.text__phone {
+.contacts__phone {
     color: #333333;
     font-size: 20px;
     font-weight: 700;
     padding-bottom: 2px;
+}
+
+.contacts__button {
+    background-color: #ffd200;
 }
 
 @media screen and (max-width: 1200px) {
@@ -497,11 +497,11 @@ body {
         max-width: 540px;
     }
 
-    .text__address {
+    .contacts__address {
         font-size: 11px;
     }
 
-    .text__phone {
+    .contacts__phone {
         font-size: 16px;
     }
 }
