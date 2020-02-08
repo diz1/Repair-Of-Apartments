@@ -1,0 +1,25 @@
+// Reset
+@import "vars/reset";
+
+// Fonts
+@import "fonts/fonts";
+
+// Default styles
+a {
+    text-decoration: none;
+    color: #000000;
+
+    display: inline-block;
+}
+
+body {
+    font-family: 'Museo Sans';
+}
+
+// Helpers
+@import "helpers/container";
+@import "helpers/button";
+
+
+// Blocks
+@import "blocks/header";

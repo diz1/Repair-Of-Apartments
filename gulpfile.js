@@ -31,14 +31,14 @@ var path = {
         js: "src/assets/js/*.js",
         css: "src/assets/sass/style.scss",
         images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}",
-        fonts: "src/assets/fonts/**/*.{eot,otf,ttf,woff,woff2}"
+        fonts: "src/assets/fonts/*.{eot,otf,ttf,woff,woff2}"
     },
     watch: {
         html: "src/**/*.html",
         js: "src/assets/js/**/*.js",
         css: "src/assets/sass/**/*.scss",
         images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}",
-        fonts: "src/assets/fonts/**/*.{eot,otf,ttf,woff,woff2}"
+        fonts: "src/assets/fonts/*.{eot,otf,ttf,woff,woff2}"
     },
     clean: "./dist"
 }
@@ -135,7 +135,7 @@ function watchFiles() {
     gulp.watch([path.watch.fonts], fonts);
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, fonts, images));
+const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts));
 const watch = gulp.parallel(build, watchFiles, browserSync);
 
 
