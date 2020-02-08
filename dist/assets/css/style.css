@@ -466,9 +466,10 @@ body {
     background-color: #ffd200;
 }
 
-.text__adress {
+.text__address {
     font-size: 13px;
     font-weight: 300;
+    color: #333333;
     margin-bottom: 9px;
 }
 
@@ -477,4 +478,58 @@ body {
     font-size: 20px;
     font-weight: 700;
     padding-bottom: 2px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .text__address {
+        font-size: 11px;
+    }
+
+    .text__phone {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .header__inner {
+        margin: 17px 20px;
+    }
+
+    .contacts__text {
+        display: none;
+    }
+
+    .contacts__button {
+        font-size: 10px;
+    }
+
+    .button {
+        padding: 15px 25px;
+        border-radius: 5px;
+    }
+
+    .logo__image {
+        width: 91px;
+        height: 44px;
+    }
 }

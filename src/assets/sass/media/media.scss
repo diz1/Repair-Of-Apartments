@@ -1,0 +1,62 @@
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .text {
+        &__address{
+            font-size: 11px;
+        }
+
+        &__phone {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .header {
+        &__inner {
+            margin: 17px 20px;
+        }
+    }
+
+    .contacts {
+
+        &__text {
+            display: none;
+        }
+
+        &__button {
+            font-size: 10px;
+        }
+    }
+
+    .button {
+        padding: 15px 25px;
+        border-radius: 5px;
+    }
+
+    .logo {
+        &__image {
+            width: 91px;
+            height: 44px;
+        }
+    }
+}

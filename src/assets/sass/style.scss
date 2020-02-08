@@ -16,6 +16,10 @@ body {
     font-family: 'Museo Sans';
 }
 
+// Vars
+@import "vars/colors";
+
+
 // Helpers
 @import "helpers/container";
 @import "helpers/button";
@@ -23,3 +27,6 @@ body {
 
 // Blocks
 @import "blocks/header";
+
+// Media
+@import "media/media";

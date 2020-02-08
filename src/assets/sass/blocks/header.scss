@@ -32,7 +32,7 @@
     // .contacts__button
 
     &__button {
-        background-color: #ffd200;
+        background-color: $main-color;
     }
 }
 
@@ -40,17 +40,19 @@
 
     // .text__adress
 
-    &__adress {
+    &__address {
         font-size: 13px;
         font-weight: 300;
 
+        color: $text-color;
+        
         margin-bottom: 9px;
     }
     
     // .text__phone
 
     &__phone {
-        color: #333333;
+        color: $text-color;
 
         font-size: 20px;
         font-weight: 700;
