@@ -1,3 +1,3 @@
 # Repair-Of-Apartments
 Первый макет
-<a href="dist/index.html">dist/index.html</a>
+<a href="https://diz1.github.io/Repair-Of-Apartments/dist/">dist/index.html</a>
