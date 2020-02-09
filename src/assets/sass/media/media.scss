@@ -2,11 +2,62 @@
     .container {
         max-width: 960px;
     }
+
+    .description {
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
+        }
+
+        &__subtitle {
+            line-height: 30px;
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {
     .container {
         max-width: 720px;
+    }
+
+    .description {
+        flex-basis: 50%;
+        &__title {
+            font-size: 20px;
+            line-height: normal;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+            line-height: normal;
+        }
+    }
+
+    .benefit {
+        &__item {
+            margin-bottom: 15px;
+            
+            &:first-child {
+                margin-top: 15px;
+            }
+        }
+
+        &__icon {
+            height: 29px;
+        }
+
+        &__description {
+            font-size: 10px;
+            line-height: 14px;
+        }
+    }
+
+    .present {
+        text-align: center;
+
+        &__image {
+            width: 75%;
+        }
     }
 }
 
@@ -24,6 +75,46 @@
             font-size: 16px;
         }
     }
+
+    .intro {
+        &__inner {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    .description {
+        flex-basis: 50%;
+
+        &__title {
+            margin-top: 0px;
+            font-size: 22px;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+        }
+    }
+
+    .benefit {
+        &__icon {
+            height: 40px;
+        }
+
+        &__description {
+            font-size: 14px;
+        }
+    }
+
+    .present {
+        text-align-last: left;
+
+        &__image {
+            width: 100%;
+            margin-left: -40px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -36,7 +127,11 @@
             margin: 17px 20px;
         }
     }
-
+    .intro {
+        &__inner {
+            align-items: center;
+        }
+    }
     .contacts {
 
         &__text {
@@ -57,6 +152,56 @@
         &__image {
             width: 91px;
             height: 44px;
+        }
+    }
+
+    
+
+    .description {
+        &__title {
+            font-size: 24px;
+            line-height: normal;
+            margin: 0 0 13px 25px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+            line-height: normal;
+
+            display: inline-block;
+
+            margin: 0 25px 25px;
+        }
+    }
+
+    .benefit {
+    
+        &__icon {
+            margin-right: 12px;
+            height: 40px;
+        }
+
+        &__item {
+            margin-left: 25px;
+            
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        &__description {
+            font-size: 12px;
+            line-height: normal;
+
+            max-width: 200px;
+        }
+    }
+
+    .present {
+        &__image {
+            max-width: 85%;
+            transform: none;
+            margin: 0 25px 10px;
         }
     }
 }
