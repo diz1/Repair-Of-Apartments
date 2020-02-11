@@ -1,0 +1,142 @@
+.offer {
+
+    background: url('../img/offer/offer-image.png') no-repeat;
+    background-position: right;
+    background-size: contain;
+    position: relative;
+
+    &:before {
+        content: '';
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: #ffffff;
+    }
+    
+    // .offer__text
+
+    &__inner {
+        position: relative;
+        padding-bottom: 73px;
+    }
+
+    // .offer__title
+
+    &__title {
+        font-size: 24px;
+        line-height: 35px;
+
+        font-weight: 700;
+        padding-top: 84px;
+        margin-bottom: 24px;
+        color: #333333;
+
+        max-width: 345px;
+    }
+
+    // .offer__subtitle
+
+    &__subtitle {
+        font-size: 16px;
+        color: #333333;
+
+        margin-bottom: 30px;
+
+        max-width: 237px;
+
+        display: inline-block;
+    }
+
+    // .offer__form
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.form {
+    max-width: 495px;
+
+    // .form__button
+
+    &__button {
+        flex-basis: 100%;
+
+        font-size: 16px;
+        line-height: 18px;
+
+        margin-bottom: 30px;
+        padding: 27px 0;
+    }
+
+    // .form__contacts
+
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .form__contact
+
+    &__contact {
+        flex-basis: 45%;
+
+    }
+
+    // .form__remind
+
+    &__remind {
+        flex-basis: 45%;
+        
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+
+    // .form__recall
+
+    &__recall {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+
+    // .form__phone
+
+    &__phone {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+}
+.input {
+    margin-bottom: 30px;
+
+    padding: 24px 0 24px 24px;
+    
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+
+    &:placeholder {
+        color: #999999;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+
+    // .input__name
+
+    &__name {
+        flex-basis: 43%;
+    }
+
+    // .input__phone
+
+    &__phone {
+        flex-basis: 43%;
+    }
+}

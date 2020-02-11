@@ -4,17 +4,19 @@
 // Fonts
 @import "fonts/fonts";
 
+
 // Default styles
 a {
     text-decoration: none;
-    color: #000000;
+    color: #333333;
 
     display: inline-block;
 }
 
 body {
-    font-family: 'Museo Sans';
+    font-family: 'Museo Sans', sans-serif;
 }
+
 
 // Vars
 @import "vars/colors";
@@ -28,6 +30,9 @@ body {
 // Blocks
 @import "blocks/header";
 @import "blocks/intro";
+@import "blocks/offer";
+@import "blocks/projects";
+
 
 // Media
 @import "media/media";

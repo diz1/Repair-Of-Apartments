@@ -23,6 +23,7 @@ var path = {
         html: "dist/",
         js: "dist/assets/js/",
         css: "dist/assets/css/",
+        slick: "dist/assets/css/",
         images: "dist/assets/img/",
         fonts: "dist/assets/fonts/"
     },
@@ -30,6 +31,7 @@ var path = {
         html: "src/*.html",
         js: "src/assets/js/*.js",
         css: "src/assets/sass/style.scss",
+        slick: "src/assets/sass/vendors/slick.css",
         images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}",
         fonts: "src/assets/fonts/*.{eot,otf,ttf,woff,woff2}"
     },
@@ -37,6 +39,7 @@ var path = {
         html: "src/**/*.html",
         js: "src/assets/js/**/*.js",
         css: "src/assets/sass/**/*.scss",
+        slick: "src/assets/sass/vendors/slick.css",
         images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}",
         fonts: "src/assets/fonts/*.{eot,otf,ttf,woff,woff2}"
     },
@@ -98,6 +101,12 @@ function css() {
         .pipe(browsersync.stream());
 }
 
+function slick() {
+    return src(path.src.slick, { base: "src/assets/sass/vendors" })
+    .pipe(dest(path.build.slick))
+    .pipe(browsersync.stream());
+}
+
 function js() {
     return src(path.src.js, {base: './src/assets/js/'})
         .pipe(plumber())
@@ -130,12 +139,13 @@ function clean() {
 function watchFiles() {
     gulp.watch([path.watch.html], html);
     gulp.watch([path.watch.css], css);
+    gulp.watch([path.watch.slick], slick);
     gulp.watch([path.watch.js], js);
     gulp.watch([path.watch.images], images);
     gulp.watch([path.watch.fonts], fonts);
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts));
+const build = gulp.series(clean, gulp.parallel(html, css, slick, js, images, fonts));
 const watch = gulp.parallel(build, watchFiles, browserSync);
 
 
@@ -143,6 +153,7 @@ const watch = gulp.parallel(build, watchFiles, browserSync);
 /* Exports Tasks */
 exports.html = html;
 exports.css = css;
+exports.slick = slick;
 exports.js = js;
 exports.images = images;
 exports.fonts = fonts;

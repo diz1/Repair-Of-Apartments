@@ -13,6 +13,22 @@
             line-height: 30px;
         }
     }
+
+    .offer {
+        background-position: center;
+        background-size: cover;
+        &:before {
+            display: none;
+        }
+    }
+
+    .projects {
+        background-position: center;
+        background-size: cover;
+        &:before {
+            display: none;
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -57,6 +73,24 @@
 
         &__image {
             width: 75%;
+        }
+    }
+
+    .offer {
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+            max-width: 495px;
+        }
+
+        &__subtitle {
+            max-width: 495px;
+
+            transform: translateX(-12px);
         }
     }
 }
@@ -145,7 +179,6 @@
 
     .button {
         padding: 15px 25px;
-        border-radius: 5px;
     }
 
     .logo {
@@ -204,4 +237,59 @@
             margin: 0 25px 10px;
         }
     }
+
+    .offer {
+        background: none;
+
+        &__inner {
+            padding: 0 20px;
+        }
+
+        &__title {
+            font-size: 20px;
+            line-height: normal;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+            transform: translateX(0);
+            line-height: normal;
+        }
+
+        &__form {
+            max-width: 275px;
+        }
+    }
+
+    .input {
+        &__name {
+            flex-basis: unset;
+            width: 100%;
+        }
+
+        &__phone {
+            flex-basis: unset;
+            width: 100%;
+        }
+    }
+
+    .form {
+        &__contacts {
+            flex-direction: column;
+
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 24px;
+        }
+
+        &__button {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 18px;
+
+            padding: 19px 56px;
+        }
+
+    }
+
 }
