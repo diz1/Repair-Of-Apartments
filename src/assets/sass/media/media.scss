@@ -29,7 +29,13 @@
             display: none;
         }
     }
+
+    .card {
+        justify-content: space-around;
+    }
 }
+
+// ----------------------------------------------------------------- MEDIA < 992px
 
 @media screen and (max-width: 992px) {
     .container {
@@ -93,7 +99,15 @@
             transform: translateX(-12px);
         }
     }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        flex-basis: auto;
+    }
 }
+
+// ----------------------------------------------------------------- MEDIA < 768px
 
 @media screen and (max-width: 768px) {
     .container {
@@ -149,7 +163,25 @@
         }
     }
 
+    .projects {
+        &__title {
+            font-size: 24px;
+            line-height: 30px;
+            padding-top: 60px;
+            margin: 0 auto 60px;
+        }
+    }
+
+    .price {
+        &__title {
+            font-size: 24px;
+            line-height: normal;
+        }
+    }
+
 }
+
+// ----------------------------------------------------------------- MEDIA < 576px
 
 @media screen and (max-width: 576px) {
     .container {
@@ -243,11 +275,17 @@
 
         &__inner {
             padding: 0 20px;
+            max-width: 275px;
+            margin-left: auto;
+            margin-right: auto;
         }
+        
 
         &__title {
             font-size: 20px;
             line-height: normal;
+
+            padding-top: 53px;
         }
 
         &__subtitle {
@@ -282,6 +320,10 @@
             line-height: 24px;
         }
 
+        &__contact {
+            padding-bottom: 56px;
+        }
+
         &__button {
             font-size: 14px;
             font-weight: 700;
@@ -290,6 +332,70 @@
             padding: 19px 56px;
         }
 
+    }
+
+    .projects {
+        &__title {
+            font-size: 18px;
+            line-height: normal;
+            max-width: 270px;
+
+            padding-top: 43px;
+            margin: 0 auto 43px;
+        }
+
+        
+    }
+
+    .project {
+       
+        &__image {
+            max-width: 246px;
+        }
+
+        &s__arrows {
+            padding-bottom: 68px;
+        }
+    }
+
+    .price {
+        &__title {
+            font-size: 18px;
+            line-height: normal;
+
+            margin-top: 52px;
+            margin-bottom: 12px;
+
+            max-width: 242px;
+        }
+
+        &__subtitle {
+            margin-bottom: 46px;
+
+            font-size: 14px;
+        }
+    }
+
+    .card {
+        max-width: 271px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &__image {
+            margin-bottom: 15px;
+        }
+
+        &__title {
+            margin-bottom: 0px;
+
+            font-size: 14px;
+        }
+
+        &__link {
+            margin-bottom: 35px;
+
+            font-size: 16px;
+        }
     }
 
 }

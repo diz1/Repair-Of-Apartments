@@ -32,7 +32,7 @@ var path = {
         js: "src/assets/js/*.js",
         css: "src/assets/sass/style.scss",
         slick: "src/assets/sass/vendors/slick.css",
-        images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}",
+        images: "src/assets/img/**/*.{jpg,png,svg,gif,ico,webp}",
         fonts: "src/assets/fonts/*.{eot,otf,ttf,woff,woff2}"
     },
     watch: {
@@ -40,7 +40,7 @@ var path = {
         js: "src/assets/js/**/*.js",
         css: "src/assets/sass/**/*.scss",
         slick: "src/assets/sass/vendors/slick.css",
-        images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}",
+        images: "src/assets/img/**/*.{jpg,png,svg,gif,ico,webp}",
         fonts: "src/assets/fonts/*.{eot,otf,ttf,woff,woff2}"
     },
     clean: "./dist"

@@ -15,50 +15,19 @@
         position: absolute;
         background-color: #f5f5f5;
     }
-    // .projects__inner
-
-    // &__inner {
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: space-between;
-    //     align-items: center;
-    //     text-align: center;
-    //     position: relative;
-    // }
-    // .projects__title
 
     &__title {
-        color: #333333;
-
-        font-size: 30px;
-        font-weight: 700;
-        line-height: 45px;
-
         padding-top: 100px;
-        margin-bottom: 99px;
+        margin: 0 auto 99px;
 
         max-width: 786px;
-    }   
-    // .projects__items
-
-    // &__items {
-    //     width: 100%;
-
-    //     display: flex;
-    //     justify-content: space-between;
-    // }
+        position: relative;
+        text-align: center;
+    }
 }
 
-// .project {
-
-//     // .project__item
-
-//     &__item {
-
-//         // &_active {
-//         //     display: block;
-//         // }
-
-//         flex-basis: 30%;
-//     }
-// }
+.project {
+    &__image {
+        margin: auto;
+    }
+}
