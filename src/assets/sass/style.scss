@@ -22,6 +22,8 @@ body {
 // Vars
 @import "vars/colors";
 
+// Vendors
+@import "vendors/slick.scss";
 
 // Helpers
 @import "helpers/container";
@@ -36,6 +38,7 @@ body {
 @import "blocks/offer";
 @import "blocks/projects";
 @import "blocks/price";
+@import "blocks/steps";
 
 
 // Media

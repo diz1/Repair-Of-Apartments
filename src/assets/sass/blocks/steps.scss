@@ -1,0 +1,56 @@
+.steps {
+    &__title {
+        display: block;
+
+        max-width: 654px;
+        text-align: center;
+
+        margin: 132px auto 59px;
+    }
+
+    &__subtitle {
+        text-align: center;
+
+        margin-bottom: 69px;
+    }
+}
+
+.steps-block {
+    display: flex;
+    justify-content: space-between;
+
+    &__step {
+        text-align: center;
+    }
+
+    &__icon {
+        &>img {
+            display: block;
+
+            margin: 0 auto;
+
+            width: 35px;
+            height: 35px;
+
+        }
+
+        max-width: 100px;
+        margin: 0 auto 30px;
+
+        border: 3px solid $main-color;
+        border-radius: 50%;
+        padding: 32px 0;
+    }
+
+    &__description {
+        display: inline-block;
+
+        max-width: 150px;
+
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+
+        margin-bottom: 90px;
+    }
+}

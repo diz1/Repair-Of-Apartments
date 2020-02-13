@@ -105,6 +105,12 @@
         align-items: center;
         flex-basis: auto;
     }
+
+    .steps-block {
+        &__arrow {
+            display: none;
+        }
+    }
 }
 
 // ----------------------------------------------------------------- MEDIA < 768px
@@ -179,6 +185,27 @@
         }
     }
 
+    .steps {
+        &__title {
+            font-size: 24px;
+            line-height: normal;
+
+            margin: 50px auto 30px;
+        }
+
+        &__subtitle {
+            margin-bottom: 35px;
+        }
+    }
+
+    .steps-block {
+        flex-direction: column;
+
+        &__description {
+            margin-bottom: 30px;
+            font-size: 12px;
+        }
+    }
 }
 
 // ----------------------------------------------------------------- MEDIA < 576px
@@ -395,6 +422,13 @@
             margin-bottom: 35px;
 
             font-size: 16px;
+        }
+    }
+
+    .steps {
+        &__title {
+            font-size: 18px;
+            width: 80%;
         }
     }
 
