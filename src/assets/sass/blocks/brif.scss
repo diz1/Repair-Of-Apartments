@@ -1,0 +1,153 @@
+.brif {
+
+    position: relative;
+
+    &:before {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -2;
+
+        background-image: url("../img/brif/brif-bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        width: 50%;
+        height: 100%;
+    }
+
+    &:after {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+
+        background-color: $main-color;
+
+        width: 50%;
+        height: 100%;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__interview {
+        flex-basis: 50%;
+    }
+
+    &__form {
+        flex-basis: 50%;
+ 
+        max-width: 370px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__input {
+        width: 93%;
+
+        display: block;
+    }
+
+    &__button {
+        width: 100%;
+
+        margin-bottom: 33px;
+        padding: 28px 0;
+    }
+
+    &__description {
+        display: inline-block;
+    }
+}
+
+.interview {
+
+    &__title {
+        margin-top: 90px;
+        margin-bottom: 45px;
+
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 33px;
+    }
+
+    &__subtitle {
+        display: inline-block;
+
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 45px;
+
+        margin-bottom: 40px;
+    }
+}
+
+.interview-list {
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        max-width: 400px;
+
+        margin-bottom: 25px;
+    }
+
+    &__counter {
+        display: inline-block;
+        text-align: center;
+        line-height: 35px;
+
+        font-size: 14px;
+        font-weight: 700;
+
+        width: 35px;
+        height: 35px;
+        border: 2px solid $text-color;
+        border-radius: 50%;
+
+        color: $text-color;
+
+        margin-right: 30px;
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: 500;
+
+        max-width: 326px;
+    }
+}
+
+.form {
+    text-align: center;
+
+    &__title {
+        margin-top: 90px;
+        margin-bottom: 50px;
+
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 33px;
+
+        color: $text-color;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 35px;
+
+        color: $text-color;
+    }
+}
