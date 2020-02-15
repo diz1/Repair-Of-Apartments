@@ -24,6 +24,8 @@
         "autoprefixer": "^7.0.0"
     },
     "browserslist": [
-        "last 8 versions"
+        "last 1 version",
+        "> 1%",
+        "IE 10"
     ]
 }

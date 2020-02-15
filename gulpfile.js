@@ -78,8 +78,9 @@ function css() {
     return src(path.src.css, { base: "src/assets/sass/" })
         .pipe(plumber())
         .pipe(sass())
-        .pipe(autoprefixer({
-            cascade: true
+        .pipe(autoprefixer( {
+            cascade: true,
+            flexbox: "no-2009"
         }))
         .pipe(cssbeautify())
         .pipe(dest(path.build.css))
